@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    place-content: center;
+    background-color: rgba(255, 255, 0, 0.773);
+    padding-top: 20px;
+    max-height: 300px;
+}
+
+.logo{
+    justify-self: center;
+
+}
+
+.contact-main-list{
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding: 1rem;
+    gap: 5rem;
+    place-content: center;
+}
+
+.call{
+    display: grid;
+    grid-auto-flow: column;
+    border-radius: 10px;
+    gap: 0.5rem;
+    background-color: rgba(0, 221, 255, 0.711);
+    padding-inline: 50px;
+    padding-block: 10px
+}
+
+.contact-list-details:hover{
+    border-bottom: 3px;
+    border-color: black;
+    border-style: double;
+
+}
+
+.main{
+    display: grid;
+    grid-auto-flow: column;
+}
+
