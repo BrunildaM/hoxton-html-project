@@ -48,3 +48,58 @@ header{
     grid-auto-flow: column;
 }
 
+.services-list{
+    list-style: none;
+    place-items: center;
+    padding: 8px;
+    
+}
+
+
+.services-list-link{
+    color: black;
+    text-decoration: none;
+    word-spacing: 00.25rem;
+}
+
+.services{
+    display: none;
+}
+
+.services:hover{
+    display: block;
+    color: black;
+}
+
+.areas-list-second{
+    display: none;
+}
+
+.areas-list-main{
+   padding: 10px;
+   display: none;
+
+}
+
+.main{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: rgba(85, 0, 255, 0.085);
+    padding: 10px 10px 10px 10px;
+}
+
+
+.main-pic{
+    
+    display: grid;
+    background-color: #fbfbfd;
+    background-image: url(./Media/handyman-clip-art-png-favpng-VmTk5nTdA6V6d0CBmsDdeZ7V4.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: start;
+}
+
+
+
