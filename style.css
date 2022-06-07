@@ -66,19 +66,33 @@ header{
     display: none;
 }
 
-.services:hover{
+.link{
+    list-style-type: georgian;
+  }
+
+
+  .link:hover ~ .services{
     display: block;
-    color: black;
-}
+  }
 
-.areas-list-second{
-    display: none;
-}
+  .areas{
+      display: none;
+  }
 
-.areas-list-main{
-   padding: 10px;
-   display: none;
 
+
+  .link-area:hover ~ .areas{
+    display: block;
+  }
+
+
+.link-area:hover ~ .areas-list-second{
+    display: block;
+  }
+
+
+  .link-area:hover ~ .areas-list-main{
+    display: block;
 }
 
 .main{
@@ -101,5 +115,24 @@ header{
     align-content: start;
 }
 
+.our-services{
+    display: grid;
+    grid-template-columns: 
+    auto auto auto;
+    margin: 10px 50px 10px 50px;
+}
+
+.plumbing-services{
+    display: grid;
+    background-color: aqua;
+}
+
+.plumbing-issues-items{
+    list-style: none;
+}
 
 
+.plumbing-issues-link{
+    text-decoration: none;
+    color: black;
+}
