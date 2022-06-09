@@ -43,20 +43,38 @@ header{
 
 }
 
-.main{
+.main-tags{
     display: grid;
     grid-auto-flow: column;
 }
 
-.services-list{
-    list-style: none;
-    place-items: center;
-    padding: 8px;
-    
+.services-header{
+    display: grid;
+    place-content: center;
+    color: rgb(56, 11, 129);
+    background-color: rgba(0, 0, 0, 0.201);
+    margin: 0;
+    padding: 0;
+}
+
+.our-services{
+  background-color: #ede6e2;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 10px;
+
+}
+
+.our-services-list{
+border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: white;
 }
 
 
-.services-list-link{
+.our-services--list-issues-link{
     color: black;
     text-decoration: none;
     word-spacing: 00.25rem;
@@ -73,10 +91,16 @@ header{
 
   .link:hover ~ .services{
     display: block;
+    position: relative;
   }
 
   .areas{
-      display: none;
+    min-width: 100%; 
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    
   }
 
 
@@ -86,16 +110,13 @@ header{
   }
 
 
-.link-area:hover ~ .areas-list-second{
-    display: block;
-  }
-
 
   .link-area:hover ~ .areas-list-main{
     display: block;
+    
 }
 
-.main{
+.main-tags{
     display: grid;
     grid-auto-flow: column;
     background-color: rgba(85, 0, 255, 0.085);
@@ -103,36 +124,101 @@ header{
 }
 
 
+.services-list-link{
+    text-decoration: none;
+    color: black;
+    
+}
+
 .main-pic{
     
     display: grid;
     background-color: #fbfbfd;
-    background-image: url(./Media/handyman-clip-art-png-favpng-VmTk5nTdA6V6d0CBmsDdeZ7V4.jpg);
-    background-size: 200px;
+    background-image: url(./Media/background.PNG);
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    min-height: 550px;
     padding: 1rem;
     align-content: start;
 }
 
+.services-header{
+    display: grid;
+    place-content: center;
+    color: rgb(56, 11, 129);
+    background-color: rgba(0, 0, 0, 0.201);
+    margin-top: 10px;
+    height: 50px;
+
+}
+
 .our-services{
-    display: grid;
-    grid-template-columns: 
-    auto auto auto;
-    margin: 10px 50px 10px 50px;
+  background-color: #ede6e2;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 10px;
+
 }
 
-.plumbing-services{
-    display: grid;
-    background-color: aqua;
+.our-services-list{
+border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: white;
 }
 
-.plumbing-issues-items{
-    list-style: none;
-}
 
-
-.plumbing-issues-link{
-    text-decoration: none;
+.our-services--list-issues-link{
     color: black;
+    text-decoration: none;
+    word-spacing: 00.25rem;
+}
+
+.why-us{
+    display: grid;
+  background-color: rgb(239, 243, 232);
+}
+
+.why-us-text{
+    display: grid;
+    padding: 10px;
+    
+}
+
+.why-us-list{
+    display: grid;
+    list-style: none;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.703);
+    padding: 20px;
+}
+
+.footer-title{
+    display: grid;
+    place-content: center;
+    color: white;
+}
+
+.footer-menu{
+    display: grid;
+    grid-template-columns: auto auto;
+   place-content: center;
+    padding-top: 10px;
+    
+}
+
+#email{
+    font-size: xx-large;
+}
+
+.subscribe{
+    background-color: yellow;
+    place-content: center;
+    font-size: xx-large;
 }
