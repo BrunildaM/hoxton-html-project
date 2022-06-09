@@ -48,6 +48,11 @@ header{
     grid-auto-flow: column;
 }
 
+.main-tags-menu{
+    text-decoration: none;
+    color: black;
+}
+
 .services-header{
     display: grid;
     place-content: center;
@@ -93,6 +98,12 @@ border: 1px solid black;
     display: block;
     position: relative;
   }
+
+  .services:hover{
+    display: block !important;
+    position: relative !important;
+}
+
 
   .areas{
     min-width: 100%; 
@@ -142,12 +153,26 @@ border: 1px solid black;
     align-content: start;
 }
 
-.service24{
-    width: 150px;
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-
+.service24 {
+    animation:  shake 0.8s infinite ;
 }
+
+
+@keyframes shake{
+    0%{
+      transform: translateX(0)
+    }
+    25%{
+      transform: translateX(25px);
+    }
+      
+    50%{
+      transform: translateX(-25px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
 
 
 .services-header{
@@ -170,10 +195,11 @@ border: 1px solid black;
 }
 
 .our-services-list{
-border: 1px solid black;
+ border: 1px solid black;
+ border-radius: 30px;
   padding: 20px;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.574);
 }
 
 
@@ -203,7 +229,7 @@ border: 1px solid black;
 }
 
 footer{
-    background-color: rgba(0, 0, 0, 0.703);
+    background: linear-gradient(to right, black, white);;
     padding: 20px;
 }
 
