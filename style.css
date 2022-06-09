@@ -142,6 +142,14 @@ border: 1px solid black;
     align-content: start;
 }
 
+.service24{
+    width: 150px;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+
 .services-header{
     display: grid;
     place-content: center;
