@@ -155,6 +155,9 @@ border: 1px solid black;
     align-content: start;
 }
 
+.service24{
+    animation: shake 0.5s infinite;
+}
 
 
 @keyframes shake{
