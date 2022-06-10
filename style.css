@@ -33,7 +33,8 @@ header{
     gap: 0.5rem;
     background-color: rgba(0, 221, 255, 0.711);
     padding-inline: 50px;
-    padding-block: 10px
+    padding-block: 10px;
+    align-items: center;
 }
 
 .contact-list-details:hover{
@@ -46,6 +47,7 @@ header{
 .main-tags{
     display: grid;
     grid-auto-flow: column;
+
 }
 
 .main-tags-menu{
@@ -145,7 +147,7 @@ border: 1px solid black;
     
     display: grid;
     background-color: #fbfbfd;
-    background-image: url(./Media/background.PNG);
+    background-image: url(./Media/background.PNG );
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 550px;
@@ -153,9 +155,6 @@ border: 1px solid black;
     align-content: start;
 }
 
-.service24 {
-    animation:  shake 0.8s infinite ;
-}
 
 
 @keyframes shake{
@@ -263,4 +262,35 @@ footer{
     background-color: yellow;
     place-content: center;
     font-size: xx-large;
+}
+
+
+@media screen and (max-width: 600px) {
+    .main-pic{
+        background-image: none;
+        min-height: unset;
+    }
+
+    .service24 {
+        display: grid;
+        place-items: center;
+    }
+
+    .main-tags {
+        grid-auto-flow: row;
+    }
+
+    .contact-main-list {
+        grid-auto-flow: row;
+        gap: 1rem;
+        justify-items: center;
+    }    
+
+    footer {
+        display: none;
+    }
+
+    .our-services {
+        grid-template-columns: unset;
+    }
 }
